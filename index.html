@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <h1 class="titulo">Calculator</h1>
+    <span class="result" id="result"> result </span>
+    <header>
+        <input id="inputData" type="text" placeholder="1+1=1">
+        <button onclick="operation()" id="btn_c" class="enter">enter</button>
+        
+    </header>
+
+    <main class="area">
+        <div class="numbers">
+            <menu>
+                <button id="0" onclick="entrada(0)">0</button>
+                <button id="1" onclick="entrada(1)">1</button>
+                <button id="2" onclick="entrada(2)">2</button>
+                <button id="3" onclick="entrada(3)">3</button>
+                <button id="4" onclick="entrada(4)">4</button>
+                <button id="5" onclick="entrada(5)">5</button>
+                <button id="6" onclick="entrada(6)">6</button>
+                <button id="7" onclick="entrada(7)">7</button>
+                <button id="8" onclick="entrada(8)">8</button>
+                <button id="9" onclick="entrada(9)">9</button>
+                <button id="+" onclick="entrada('+')">+</button>
+                <button id="-" onclick="entrada('-')">-</button>
+                <button id="/" onclick="entrada('/')">/</button>
+                <button id="*" onclick="entrada('*')">*</button>
+            <menu>
+        </div>
+    </main>
+
+    <script src="controler.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.1/math.min.js"></script>
+
+</body>
+</html>
